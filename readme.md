@@ -2,12 +2,16 @@
 
 A python program to convert scanned/image-based PDFs into text using OCR.
 
-It first converts each page in a PDF into an image and then uses pytesseract to convert any text into a .txt file.
+It first converts each page in a PDF into an image and then uses pytesseract to convert any text into a .txt file. 
+Large files are broken into chunks.
+
+Credit to geeksforgeeks.org, which heavily inspired the code for handling [PDF parsing](https://www.geeksforgeeks.org/python-reading-contents-of-pdf-using-ocr-optical-character-recognition/)
+
 
 ##### Requirements
 
 - Python 3.6.
-- You'll need tesseract installed on your computer. If you have homebrew installed, use:
+- Tesseract. If you have homebrew installed, run the following command from your terminal:
 
 ```
 brew install tesseract

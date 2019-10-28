@@ -1,14 +1,3 @@
-"""
-IMAGE-BASED PDF CONVERTER
-Author: Daniel Simmons-Ritchie
-
-This program converts image-based PDFs into text files. It first converts a PDF entirely into images and then uses OCR
-to read text in those images.
-
-Credit to geeksforgeeks.org, which heavily inspired the code for handling PDF parsing: https://www.geeksforgeeks.org/python-reading-contents-of-pdf-using-ocr-optical-character-recognition/
-
-"""
-
 
 # Third party imports
 from datetime import datetime
