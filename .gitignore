@@ -6,7 +6,7 @@ processed_pdf_chunks/
 processed_text/
 archive/
 tests/
-input_pdfs/
 all_dispensary_pdfs/
 final_text/
 archive/
+__pycache__/
