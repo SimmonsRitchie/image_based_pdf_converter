@@ -12,6 +12,7 @@ Credit to geeksforgeeks.org, which heavily inspired the code for handling PDF pa
 
 # Third party imports
 from datetime import datetime
+from pathlib import Path
 
 # My imports
 from modules.misc import program_intro, linebreak_start, linebreak_end, get_list_of_files_in_folder
@@ -30,11 +31,12 @@ def main():
     ############ SET UP ############
 
     # dirs
+    output_parent_dir = Path("output_files/")
     input_pdf_directory = "input_pdfs"
-    pdf_chunk_directory = "processed_pdf_chunks/"
-    image_directory = "processed_images/"
-    output_text_directory = "processed_text/"
-    final_directory = "final_text/"
+    pdf_chunk_directory = output_parent_dir / "processed_pdf_chunks/"
+    image_directory = output_parent_dir / "processed_images/"
+    output_text_directory = output_parent_dir / "processed_text/"
+    final_directory = output_parent_dir / "final_text/"
 
     # other vars
     delete_list_start_program = [pdf_chunk_directory, image_directory, output_text_directory] # temp folders that must be deleted when program starts
